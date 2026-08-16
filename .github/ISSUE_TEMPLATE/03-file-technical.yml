@@ -1,0 +1,92 @@
+name: File or Technical Problem / 文件或技术问题
+description: Report a missing, corrupted, inaccessible, or incorrectly displayed file.
+title: "[File] "
+labels: ["file-problem", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for file integrity, download, decompression, and display problems. For authorization or restricted-access requests, please email aigraph@cslt.org.
+
+  - type: dropdown
+    id: resource
+    attributes:
+      label: Resource
+      options:
+        - AIGE Red Book — Chinese
+        - AIGE Red Book — English
+        - AIGE K12-PMH-EN — PPT Slides
+        - AIGE K12-PMH-EN — Teaching Plans and Student Handouts
+        - Other AIGE resource
+    validations:
+      required: true
+
+  - type: input
+    id: version-doi
+    attributes:
+      label: Version or DOI
+      placeholder: "e.g., v1.0 or 10.5281/zenodo.xxxxxxxx"
+    validations:
+      required: true
+
+  - type: input
+    id: file-name
+    attributes:
+      label: File name
+      placeholder: "e.g., Primary.zip"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: Problem type
+      options:
+        - File is missing
+        - Download fails
+        - Archive cannot be opened or extracted
+        - File appears corrupted
+        - Content does not display correctly
+        - Link or DOI problem
+        - Other technical problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Problem details and reproduction steps
+      description: Describe what happened, what you expected, and the steps that reproduce the problem.
+      placeholder: |
+        1. Opened...
+        2. Downloaded...
+        3. The following error appeared...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: System environment
+      description: Include the operating system, browser, software name, and software version when relevant.
+      placeholder: "e.g., Windows 11; Chrome 149; PowerPoint 2024"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or error messages
+      description: Drag images into this field or paste the complete error message. Remove private information first.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I have searched the existing issues and did not find the same report.
+          required: true
+        - label: I have removed private or sensitive information from screenshots and error messages.
+          required: true

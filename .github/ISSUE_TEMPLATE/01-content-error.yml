@@ -1,0 +1,91 @@
+name: Content or Factual Error / 内容或事实错误
+description: Report a specific knowledge, factual, or conceptual error in an AIGE resource.
+title: "[Content Error] "
+labels: ["content-error", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve the AIGE resources. Please submit one clearly identifiable issue per report.
+
+  - type: dropdown
+    id: resource
+    attributes:
+      label: Resource
+      description: Select the resource in which the issue appears.
+      options:
+        - AIGE Red Book — Chinese
+        - AIGE Red Book — English
+        - AIGE K12-PMH-EN — Primary School
+        - AIGE K12-PMH-EN — Middle School
+        - AIGE K12-PMH-EN — High School
+        - Other AIGE resource
+    validations:
+      required: true
+
+  - type: input
+    id: version-doi
+    attributes:
+      label: Version or DOI
+      placeholder: "e.g., v1.0 or 10.5281/zenodo.xxxxxxxx"
+    validations:
+      required: true
+
+  - type: input
+    id: file-name
+    attributes:
+      label: File name
+      placeholder: "e.g., Primary.zip / Lesson-03-L1.pptx / redbook-en.pdf"
+    validations:
+      required: false
+
+  - type: input
+    id: location
+    attributes:
+      label: Exact location
+      description: Identify the chapter, lesson, page, or slide number.
+      placeholder: "e.g., Chapter 4, p. 76 / Lesson 8, Slide 12"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-content
+    attributes:
+      label: Current content
+      description: Quote or accurately describe the content in question.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Description of the problem
+      description: Explain why the content may be inaccurate, unclear, or conceptually inappropriate.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-correction
+    attributes:
+      label: Suggested correction
+      description: Provide proposed wording or a correction if available.
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence or references
+      description: Provide authoritative sources, links, or bibliographic information.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I have searched the existing issues and did not find the same report.
+          required: true
+        - label: This report does not contain private or sensitive information.
+          required: true

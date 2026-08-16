@@ -1,0 +1,95 @@
+name: Third-Party Rights or Copyright / 第三方材料或版权问题
+description: Report a possible attribution, license, permission, or copyright issue.
+title: "[Rights] "
+labels: ["copyright", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not disclose private, confidential, or legally sensitive information in a public issue. Such matters should be sent to aigraph@cslt.org.
+
+  - type: dropdown
+    id: resource
+    attributes:
+      label: Resource
+      options:
+        - AIGE Red Book — Chinese
+        - AIGE Red Book — English
+        - AIGE K12-PMH-EN — Primary School
+        - AIGE K12-PMH-EN — Middle School
+        - AIGE K12-PMH-EN — High School
+        - Other AIGE resource
+    validations:
+      required: true
+
+  - type: input
+    id: version-doi
+    attributes:
+      label: Version or DOI
+      placeholder: "e.g., v1.0 or 10.5281/zenodo.xxxxxxxx"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: File and exact location
+      placeholder: "e.g., Primary.zip, Lesson 6, Slide 9"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: concern-type
+    attributes:
+      label: Type of concern
+      options:
+        - Missing or inaccurate attribution
+        - License incompatibility
+        - Permission status unclear
+        - Broken or incorrect source link
+        - Suspected unauthorized use
+        - Other rights-related concern
+    validations:
+      required: true
+
+  - type: textarea
+    id: material
+    attributes:
+      label: Material concerned
+      description: Identify and briefly describe the image, text, table, dataset, software, video, or other material.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source-rights-holder
+    attributes:
+      label: Original source and rights holder
+      description: Provide the original URL, citation, author, publisher, or rights holder where known.
+    validations:
+      required: true
+
+  - type: textarea
+    id: concern
+    attributes:
+      label: Description of the concern
+      description: Explain the possible rights or attribution problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Suggested action
+      description: Suggest a correction, replacement, removal, attribution, or license clarification if possible.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I have searched the existing issues and did not find the same report.
+          required: true
+        - label: This report contains no private, confidential, or legally sensitive information.
+          required: true

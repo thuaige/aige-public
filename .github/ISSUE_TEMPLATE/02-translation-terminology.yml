@@ -1,0 +1,80 @@
+name: Translation or Terminology / 翻译或术语问题
+description: Report an inaccurate translation, inconsistent term, or language problem.
+title: "[Translation] "
+labels: ["translation", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for translation accuracy, terminology consistency, grammar, and wording issues.
+
+  - type: dropdown
+    id: resource
+    attributes:
+      label: Resource
+      options:
+        - AIGE Red Book — English
+        - AIGE K12-PMH-EN — Primary School
+        - AIGE K12-PMH-EN — Middle School
+        - AIGE K12-PMH-EN — High School
+        - Other English-language AIGE resource
+    validations:
+      required: true
+
+  - type: input
+    id: version-doi
+    attributes:
+      label: Version or DOI
+      placeholder: "e.g., v1.0 or 10.5281/zenodo.xxxxxxxx"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: File and exact location
+      placeholder: "e.g., Middle.zip, Lesson 5, Slide 18"
+    validations:
+      required: true
+
+  - type: textarea
+    id: source-text
+    attributes:
+      label: Source text
+      description: Provide the corresponding source-language text, if available.
+    validations:
+      required: false
+
+  - type: textarea
+    id: current-translation
+    attributes:
+      label: Current English text
+      description: Quote the wording currently used in the resource.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-translation
+    attributes:
+      label: Suggested revision
+      description: Provide your recommended translation or terminology.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale and references
+      description: Explain the reason for the change and include authoritative references when relevant.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I have searched the existing issues and did not find the same report.
+          required: true
+        - label: This report does not contain private or sensitive information.
+          required: true
