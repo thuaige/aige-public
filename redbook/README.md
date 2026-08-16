@@ -1,3 +1,39 @@
+## About the book
+
+## Open Editing Policy
+
+In response to the rapid development of both artificial intelligence and Artificial Intelligence General Education, this Red Book follows an open editorial approach. AI specialists, education experts, social scientists and other interested contributors are invited to participate through, among other forms: (1) comments and suggestions; (2) discussions of additional topics; and (3) explorations of relevant theories and practices.
+
+The Red Book will incorporate expert feedback into subsequent editions. Individual contributions will be recognized in the “AIGE Contributors” section of the book.
+
+Feedback and contributions may be submitted through:
+
+1. GitHub Discussions: https://github.com/thuaige/aige-public/discussions
+2. Email: [aigraph@cslt.org](mailto:aigraph@cslt.org)
+
+
+## Related Resources
+
+1. Official webpage of Center for AIGE at Tsinghua U.： http://thuaige.org
+2. Zenodo AIGE community： https://zenodo.org/communities/aige/
+
+
+## License
+
+Unless otherwise stated, *Artificial Intelligence General Education: Cognitive Autonomy in an Intelligent Society* and the original book-related materials in this repository are licensed under the [Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+You may copy and redistribute the unmodified material in any medium or format, provided that you give appropriate credit, include a link to the license, and use the material solely for noncommercial purposes.
+
+You may not publicly distribute modified, abridged, reorganized, adapted, or translated versions without prior written permission from the copyright holders. Commercial publication, paid-course distribution, inclusion in commercial resource packages, and other uses primarily intended for commercial advantage or monetary compensation also require prior written permission.
+
+Recommended attribution:
+
+> Dong Wang and Shaoping Ma, *Artificial Intelligence General Education: Cognitive Autonomy in an Intelligent Society*, Center for Artificial Intelligence General Education (AIGE), Department of Computer Science and Technology, Tsinghua University, 2026.
+
+Third-party texts, images, figures, tables, trademarks, data, and other materials remain subject to the terms established by their respective rights holders and are not covered by this license unless explicitly stated otherwise.
+
+
+
 ## 本书说明
 
 
@@ -31,38 +67,4 @@
 本书中引用的第三方文字、图片、图表、商标、数据及其他材料，仍适用其各自的版权和许可条件，不包含在上述授权范围内。
 
 
-
-## About the book
-
-## Open Editing Policy
-
-In response to the rapid development of both artificial intelligence and Artificial Intelligence General Education, this Red Book follows an open editorial approach. AI specialists, education experts, social scientists and other interested contributors are invited to participate through, among other forms: (1) comments and suggestions; (2) discussions of additional topics; and (3) explorations of relevant theories and practices.
-
-The Red Book will incorporate expert feedback into subsequent editions. Individual contributions will be recognized in the “AIGE Contributors” section of the book.
-
-Feedback and contributions may be submitted through:
-
-1. GitHub Discussions: https://github.com/thuaige/aige-public/discussions
-2. Email: [aigraph@cslt.org](mailto:aigraph@cslt.org)
-
-
-## 相关资源
-
-1. Official webpage of Center for AIGE at Tsinghua U.： http://thuaige.org
-2. Zenodo AIGE community： https://zenodo.org/communities/aige/
-
-
-## License
-
-Unless otherwise stated, *Artificial Intelligence General Education: Cognitive Autonomy in an Intelligent Society* and the original book-related materials in this repository are licensed under the [Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).
-
-You may copy and redistribute the unmodified material in any medium or format, provided that you give appropriate credit, include a link to the license, and use the material solely for noncommercial purposes.
-
-You may not publicly distribute modified, abridged, reorganized, adapted, or translated versions without prior written permission from the copyright holders. Commercial publication, paid-course distribution, inclusion in commercial resource packages, and other uses primarily intended for commercial advantage or monetary compensation also require prior written permission.
-
-Recommended attribution:
-
-> Dong Wang and Shaoping Ma, *Artificial Intelligence General Education: Cognitive Autonomy in an Intelligent Society*, Center for Artificial Intelligence General Education (AIGE), Department of Computer Science and Technology, Tsinghua University, 2026.
-
-Third-party texts, images, figures, tables, trademarks, data, and other materials remain subject to the terms established by their respective rights holders and are not covered by this license unless explicitly stated otherwise.
 
